@@ -2,7 +2,7 @@ require('dotenv').config();
 require('express-async-errors');
 //extra security
 const helmet = require('helmet')
-const cors = require('cors')
+// const cors = require('cors')
 const xss = require('xss-clean')
 const rateLimiter = require('express-rate-limit')
 // swagger 
@@ -32,7 +32,7 @@ app.use(rateLimiter({
 app.use(express.json());
 // extra packages
 app.use(helmet())
-app.use(cors())
+//app.use(cors())
 app.use(xss())
 
 // routes
