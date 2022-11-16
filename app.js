@@ -1,9 +1,9 @@
 require('dotenv').config();
 require('express-async-errors');
 //extra security
-const helmet = require('helmet')
+//const helmet = require('helmet')
 // const cors = require('cors')
-const xss = require('xss-clean')
+//const xss = require('xss-clean')
 const rateLimiter = require('express-rate-limit')
 // swagger 
 const swaggerUI = require('swagger-ui-express')
@@ -31,9 +31,9 @@ app.use(rateLimiter({
 }))
 app.use(express.json());
 // extra packages
-app.use(helmet())
+//app.use(helmet())
 //app.use(cors())
-app.use(xss())
+//app.use(xss())
 
 // routes
 app.use('/api/v1/auth', authRouter)
