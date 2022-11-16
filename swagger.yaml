@@ -21,9 +21,9 @@ paths:
             schema:
               $ref: '#/components/schemas/RegisterUserRequest'
             example:
-              name: shubham
-              email: sg234@gmail.com
-              password: sg234
+              name: bob
+              email: bob@gmail.com
+              password: secret
         required: true
       responses:
         '200':
@@ -45,8 +45,8 @@ paths:
             schema:
               $ref: '#/components/schemas/LoginUserRequest'
             example:
-              email: sg234@gmail.com
-              password: sg234
+              email: susan@gmail.com
+              password: secret
         required: true
       responses:
         '200':
@@ -120,7 +120,7 @@ paths:
             schema:
               $ref: '#/components/schemas/UpdateJobRequest'
             example:
-              company: Meta
+              company: random
               position: intern
         required: true
       responses:
